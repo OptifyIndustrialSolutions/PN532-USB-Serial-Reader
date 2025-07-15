@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PN532 Reader Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PN532 USB Serial Reader</h1>
+    <button id="connectBtn">Connect to PN532</button>
+    <div id="status" class="status">Ready. Click "Connect to PN532" to begin.</div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Card Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
