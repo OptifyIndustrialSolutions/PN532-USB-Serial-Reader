@@ -8,8 +8,24 @@
 </head>
 <body>
     <h1>PN532 USB Serial Reader</h1>
-    <button id="connectBtn">Connect to PN532</button>
+    <div class="controls">
+        <button id="connectBtn">Connect to PN532</button>
+        <button id="getVersionBtn" disabled>Get Firmware Version</button>
+    </div>
     <div id="status" class="status">Ready. Click "Connect to PN532" to begin.</div>
+    <div id="firmwareInfo" class="firmware-info"></div>
+    
+    <div id="cardOperations" class="card-operations" style="display:none;">
+        <h3>Card Operations</h3>
+        <div id="cardTypeInfo" class="card-type-info"></div>
+        <div class="op-buttons">
+            <button id="readCardBtn" disabled>Read Card</button>
+            <button id="writeCardBtn" disabled>Write Card</button>
+            <button id="formatCardBtn" disabled>Format Card</button>
+            <button id="scanAgainBtn">Scan Again</button>
+        </div>
+    </div>
+
     <table id="dataTable">
         <thead>
             <tr>

@@ -12,12 +12,18 @@ button {
     font-size: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
+    margin-right: 0.5rem;
+}
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 table {
     width: 100%;
     border-collapse: collapse;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-top: 1.5rem;
 }
 th, td {
     padding: 0.75rem;
@@ -38,4 +44,33 @@ tr:hover {
     margin-bottom: 15px;
     color: #333;
     font-size: 0.9rem;
+}
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.firmware-info {
+    background-color: #f0fff0;
+    border: 1px solid #d0e0d0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: none;
+}
+.card-operations {
+    background-color: #fff8e0;
+    border: 1px solid #e0d8c0;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px 0;
+}
+.card-type-info {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.op-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
